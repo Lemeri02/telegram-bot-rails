@@ -1,7 +1,7 @@
 require File.expand_path('../config/environment', __dir__)
 require 'telegram/bot'
 
-TOKEN = Rails.application.credentials.bot[:token]
+TOKEN = Rails.application.credentials.bot[:token] || ENV['TOKEN']
 
 Telegram::Bot::Client.run(TOKEN) do |bot|
   bot.listen do |message|
