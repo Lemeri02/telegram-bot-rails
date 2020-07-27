@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Запуск бота
+```
+ruby telegram/bot.rb
+```
+
+Запуск Rails 
+```
+rails s
+```
